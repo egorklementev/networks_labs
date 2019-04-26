@@ -1,0 +1,14 @@
+1 - sync
+0 - request
+
+Sync:
+send "name:ip:port:file1,file2,..." - itself
+send "n" - number of known nodes
+loop:
+  send "name:ip:port"
+
+Request:
+send "filename1"
+recv "n" - word count
+loop:
+  recv "word" word by word
